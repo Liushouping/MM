@@ -86,7 +86,7 @@ style="background-image: url('./image/banner-01.png');">
 
 <section 
 x-show="status === 'price'"
-class="relative overflow-hidden bg-cover bg-center h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
+class="relative overflow-hidden bg-cover bg-center h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16 transition-all duration-500" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
@@ -114,7 +114,8 @@ style="background-image: url('./image/banner-01.png');">
             <li class="text-white text-[10px]">*50 copies only</li>
           </ul>
         </div>
-        <div class="w-[300px] h-[190px] flex flex-col justify-center space-y-2">
+        <div 
+        class="w-[300px] h-[190px] flex flex-col justify-center space-y-2">
           <h5 class="text-white text-[12px]">Your Email to enter the raffle:</h5>
           <input 
           type="email" 
@@ -131,7 +132,7 @@ style="background-image: url('./image/banner-01.png');">
 
 <section 
 x-show="status === 'rebate'"
-class="relative overflow-hidden bg-cover bg-center h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
+class="relative overflow-hidden bg-cover bg-center h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16 transition-all duration-500" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
