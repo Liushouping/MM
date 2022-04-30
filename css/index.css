@@ -22,17 +22,22 @@ input::-webkit-inner-spin-button {
        -webkit-appearance: none;
        margin: 0;
 }
-/*
- fixed for ios
-*/
-.bg-vapor-fixed::before {
-   content: ' ';
-   position: fixed;
-   z-index: -1;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background: url(../image/vapor-02.png) center no-repeat;
-   background-size: cover;
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button {
+  display: inline-block;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

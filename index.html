@@ -6,11 +6,48 @@ class="scroll-smooth">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>Allizart</title>
   <script src="./js/tailwind@3.0.14.js"></script>
-  <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet">
   <link href="./css/swiper-bundle.min.css" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'se': '375px',
+          'xs': '414px',
+          'sm': '768px',
+          'md': '992px',
+          'ld': '1024px',
+          'lg': '1366px',
+          'xl': '1920px',
+        },
+        extend: {
+          colors: {
+            textblue: '#2E0E7C',
+            darkblue: '#080B1A',
+            deepblue: '#080B1A',
+            lightblue: '#01003A',
+            deepred: '#9E1533',
+            lightred: '#E01E49',
+            instruction: "#F2F2F2",
+            parther: '#DCDCDC',
+            buttonhover: '#EF443F',
+            fontred: '#FF3631',
+            charyred: '#E01E49',
+            lightgreen: '#4CD2AD',
+            linecolor: '#4c4c4c',
+            timecolor: '#9C9C9C',
+          },
+        },
+        fontFamily: {
+          'sans': ['Prompt', 'sans-serif'],
+          'beatstreet': ['beatstreet', 'sans-serif']
+        },
+      }
+}
+  </script>
 </head>
 <body 
-x-data="{ status: 'all' }"
 class="tracking-[1px]">
 
 <header class="fixed w-full h-[60px] px-10 flex items-center z-50" 
@@ -20,6 +57,8 @@ style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
   </a>
 </header>
 
+<section 
+x-data="{ status: 'all' }">
 <section 
 x-show="status === 'all'"
 class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
@@ -203,6 +242,7 @@ style="background-image: url('./image/banner-01.png');">
       </div>
     </div>
   </div>
+</section>
 </section>
 
 <section 
@@ -429,22 +469,22 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex j
   </div>
 </footer>
 
-<button 
-x-data="topBtn" 
-@click="scrolltoTop" 
-id="topButton" 
-class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
+<a 
+id="button"
+class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%] appearance-none cursor-pointer">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
   </svg>
   <p 
   class="mt-4 tracking-widest" 
   style="writing-mode: vertical-lr;">BACK TO TOP</p>
-</button>
+</a>
 
 <script src="./js/swiper@7.4.1.js"></script>
 <script src="./js/fslightbox@3.0.9.js"></script>
 <script src="./js/alpinejs@3.2.3.js" defer></script>
+<script src="./js/jquery.min.js"></script>
 <script src="./js/app.js"></script>
+
 </body>
 </html>

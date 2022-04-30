@@ -34,21 +34,35 @@ tailwind.config = {
       }
 }
     // back to top
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('topBtn', () => ({
-                scrolltoTop() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            }));
-        });
+        // document.addEventListener('alpine:init', () => {
+        //     Alpine.data('topBtn', () => ({
+        //         scrolltoTop() {
+        //             document.body.scrollTop = 0;
+        //             document.documentElement.scrollTop = 0;
+        //         }
+        //     }));
+        // });
 
-        const topBtn = document.getElementById("topButton");
-        window.onscroll = () => {
-            (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ?
-            topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
+        // const topBtn = document.getElementById("topButton");
+        // window.onscroll = () => {
+        //     (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ?
+        //     topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
-        }
+        // }
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
     // * Swiper
     const swiper = new Swiper('#product', {
       loop: true,
