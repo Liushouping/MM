@@ -14,7 +14,8 @@ class="scroll-smooth">
       theme: {
         screens: {
           'se': '375px',
-          'xe': '421px',
+          'xs': '414px',
+          'xse' '420px',
           'sm': '768px',
           'md': '992px',
           'ld': '1024px',
@@ -59,7 +60,7 @@ style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
 
 <section 
 x-data="{ status: 'all' }"
-class="relative overflow-hidden bg-vapor-fixed h-[960px] xe:h-[1020px] lg:h-screen w-full flex justify-center items-center pb-4 pt-0 xe:pt-32 lg:pt-16">
+class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-screen w-full flex justify-center items-center pb-4 pt-0 xs:pt-32 lg:pt-16">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
   class="relative max-w-5xl w-full flex flex-col lg:flex-row mx-auto z-20">
@@ -67,7 +68,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xe:h-[1020px] lg:h-scre
     <div 
     class="w-full lg:w-2/3 flex flex-col justify-center lg:justify-end items-center z-20 relative">
       <div class="flex lg:hidden flex-col z-20 justify-center items-center">
-        <h3 class="text-lightred font-bold text-[39px] xe:text-[40px] sm:text-[46px] md:text-[56px] tracking-[1.5px] xe:tracking-[1px] leading-none">LIMITED RELEASE</h3>
+        <h3 class="text-lightred font-bold text-[39px] xs:text-[40px] sm:text-[46px] md:text-[56px] tracking-[1.5px] xs:tracking-[1px] leading-none">LIMITED RELEASE</h3>
         <h4 class="text-white text-[13px] sm:text-[15px] md:text-[19px] font-bold tracking-[1.3px]">
           <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
         </h4>
@@ -92,37 +93,37 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xe:h-[1020px] lg:h-scre
       <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
         <div 
         @click="status = 'price'" 
-        class="w-[120px] xe:w-[180px] h-[120px] xe:h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt1">
+        class="w-[120px] sm:w-[180px] h-[120px] sm:h-[180px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt1">
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
-            <li class="text-white xe:py-2 font-bold text-[32px] xe:text-[46px]"><span class="text-[24px]">$</span>700</li>
-            <li class="text-white text-[8px] xe:text-[10px] font-thin whitespace-pre">*50 copies only</li>
+            <li class="text-white sm:py-2 font-bold text-[32px] sm:text-[46px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[8px] sm:text-[10px] font-thin whitespace-pre">*50 copies only</li>
           </ul>
         </div>
         <div 
         @click="status = 'rebate'" 
-        class="max-w-[320px] xe:w-full h-[120px] xe:h-[190px] bt2" style="width: calc(100% - 100px);">
+        class="max-w-[320px] sm:w-full h-[120px] sm:h-[180px] bt2" style="width: calc(100% - 100px);">
           <div 
           class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
-            <img src="./image/MM-logo.png" class="absolute -top-11 xe:-top-12 w-[120px] xe:w-[180px]">
+            <img src="./image/MM-logo.png" class="absolute -top-11 sm:-top-12 w-[120px] sm:w-[180px]">
 
             <div class="w-full px-6 flex flex-row">
               <div class="w-full">
                 <ul class="flex flex-col items-start">
                   <li class="text-white text-[12px] sm:text-[16px] whitespace-pre">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-2 xe:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
+                  <li class="text-2xl py-2 sm:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
                     <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
                     $700
                     <img src="./image/delling.svg" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white font-bold text-[32px] xe:text-[46px]"><span class="text-[18px] xe:text-[24px]">$</span>199</span>
+                    <span class="text-white font-bold text-[32px] sm:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
                   </li>
-                  <li class="text-white text-[8px] xe:text-[10px] font-thin">*50 copies only</li>
+                  <li class="text-white text-[8px] sm:text-[10px] font-thin">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
                 <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
-                <img src="./image/pd-01.png" class="absolute bottom-0 -right-6 xe:-right-10 w-[90px] xe:w-[140px]">
+                <img src="./image/pd-01.png" class="absolute bottom-0 -right-6 sm:-right-10 w-[90px] sm:w-[140px]">
               </div>
             </div>
           </div>
@@ -136,7 +137,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xe:h-[1020px] lg:h-scre
 
       <div 
       x-show="status === 'price'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g1">
+      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g1">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
@@ -151,7 +152,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xe:h-[1020px] lg:h-scre
 
       <div 
       x-show="status === 'rebate'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g2">
+      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g2">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
@@ -221,7 +222,7 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
   		<h5 
       class="text-lightred pb-4 text-2xl">ABOUT</h5>
   		<p 
-      class="font-light text-xe md:text-[14px] text-white text-left"
+      class="font-light text-xs md:text-[14px] text-white text-left"
       style="line-height: 22px;letter-spacing: 0px;">
       The Last: Naruto the Movie has a red scarf bringing out the story’s beginning and end! In regards to this manga, Naruto, the scarf is a must-have for many ninjas, especially for Naruto Uzumaki, the red scarf has an irreplaceable special meaning. On the poster for The Last: Naruto the Movie, the main visual is Naruto Uzumaki with the red scarf wrapped around his neck! This red scarf is a representation of a love story because it was knitted by Hinata Hyuga. Although the scarf has been through countless battles and has sustained damage, Hinata still persistently knits the scarf over and over again, with every needle and thread representing her love for Naruto and announcing that the love story between the two of characters will begin. In order to bring the classic main visual on the poster, Zodiakos Studio went through the process of restoring the main character on the original poster, including Naruto’s expression and charm through refined engraving and painting, demonstrating expertise in restoration – even details of the knit patterns on the scarf are so realistic that one can see the restoration artist’s experienced sculpting abilities and also including the scarf’s flowing design, demonstrating incredibly vivid and dynamic visual effects – adding the perfect finishing touches on this GK. In terms of the scenes that players value, the studio definitely did not slack on either. In the most realistic aspect, the studio perfectly replicated the footprints in the snow through work with glitter to show the shimmering effect of snow grounds and a small Naruto snowman off to the side, giving a cute and lovable vibe. This GK is definitely a very detailed work! Zodiakos Studio is the studio for authentic GK, possessing top-notch craftsmanship and pursuit of perfection! All packaging for GK works include a luxury box, Styrofoam drawstring, perfect sealant, unboxing gloves, and the most important for the work – certification of authenticity and serial number iron plate. It is definitely a top-notch work of art!</p>
   	</div>
@@ -230,7 +231,7 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
   		<h5 
       class="text-lightred pb-4 text-2xl">DETAILS</h5>
   		<p 
-      class="font-light text-xe md:text-[14px] text-white text-left" 
+      class="font-light text-xs md:text-[14px] text-white text-left" 
       style="line-height: 22px;letter-spacing: 0px;">
       Product Serial Number: Z.S-001<br>
       Scale: 1/6<br>
@@ -326,12 +327,12 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
 
 <section 
 x-data="{ status: 'all' }"
-class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xe:h-[860px] lg:h-screen w-full flex justify-center items-center overflow-hidden">
+class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px] lg:h-screen w-full flex justify-center items-center overflow-hidden">
   <div 
   class="max-w-5xl w-full flex flex-col justify-center items-center lg:flex-row z-20 pt-[40px]">
     <div class="md:w-1/2 flex flex-col justify-center items-center">
       <div class="flex lg:hidden flex-col z-20">
-        <h3 class="text-gray-900 font-bold text-[39px] xe:text-[40px] sm:text-[46px] md:text-[56px] tracking-[1.5px] xe:tracking-[1px] leading-none">LIMITED RELEASE</h3>
+        <h3 class="text-gray-900 font-bold text-[39px] xs:text-[40px] sm:text-[46px] md:text-[56px] tracking-[1.5px] xs:tracking-[1px] leading-none">LIMITED RELEASE</h3>
         <h4 class="text-white text-[13px] sm:text-[15px] md:text-[19px] font-bold tracking-[1.3px]">
           <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
         </h4>
@@ -360,40 +361,79 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xe:h-[860px
         <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
       </div>
 
-      <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
+<!--       <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
         <div 
         @click="status = 'price'" 
-        class="w-[120px] xe:w-[180px] h-[120px] xe:h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt3">
+        class="w-[120px] xs:w-[180px] h-[120px] xs:h-[180px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt3">
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
-            <li class="text-white xe:py-2 font-bold text-[32px] xe:text-[46px]"><span class="text-[24px]">$</span>700</li>
-            <li class="text-white text-[8px] xe:text-[10px] font-thin whitespace-pre">*50 copies only</li>
+            <li class="text-white xs:py-2 font-bold text-[32px] xs:text-[46px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[8px] xs:text-[10px] font-thin whitespace-pre">*50 copies only</li>
           </ul>
         </div>
         <div 
         @click="status = 'rebate'" 
-        class="max-w-[320px] xe:w-full h-[120px] xe:h-[190px] bt4" style="width: calc(100% - 100px);">
+        class="max-w-[320px] xs:w-full h-[120px] xs:h-[180px] bt4" style="width: calc(100% - 100px);">
           <div 
           class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
-            <img src="./image/MM-logo.png" class="absolute -top-11 xe:-top-12 w-[120px] xe:w-[180px]">
+            <img src="./image/MM-logo.png" class="absolute -top-11 xs:-top-12 w-[120px] xs:w-[180px]">
 
             <div class="w-full px-6 flex flex-row">
               <div class="w-full">
                 <ul class="flex flex-col items-start">
                   <li class="text-white text-[12px] sm:text-[16px] whitespace-pre">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-2 xe:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
+                  <li class="text-2xl py-2 xs:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
                     <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
                     $700
                     <img src="./image/delling.svg" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white font-bold text-[32px] xe:text-[46px]"><span class="text-[18px] xe:text-[24px]">$</span>199</span>
+                    <span class="text-white font-bold text-[32px] xs:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
                   </li>
-                  <li class="text-white text-[8px] xe:text-[10px] font-thin">*50 copies only</li>
+                  <li class="text-white text-[8px] xs:text-[10px] font-thin">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
                 <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
-                <img src="./image/pd-01.png" class="absolute bottom-0 -right-6 xe:-right-10 w-[90px] xe:w-[140px]">
+                <img src="./image/pd-01.png" class="absolute bottom-0 -right-6 xs:-right-10 w-[90px] xs:w-[140px]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
+        <div 
+        @click="status = 'price'" 
+        class="w-[120px] sm:w-[180px] h-[120px] sm:h-[180px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt3">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
+            <li class="text-white sm:py-2 font-bold text-[32px] sm:text-[46px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[8px] sm:text-[10px] font-thin whitespace-pre">*50 copies only</li>
+          </ul>
+        </div>
+        <div 
+        @click="status = 'rebate'" 
+        class="max-w-[320px] sm:w-full h-[120px] sm:h-[180px] bt4" style="width: calc(100% - 100px);">
+          <div 
+          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
+            <img src="./image/MM-logo.png" class="absolute -top-11 sm:-top-12 w-[120px] sm:w-[180px]">
+
+            <div class="w-full px-6 flex flex-row">
+              <div class="w-full">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-[12px] sm:text-[16px] whitespace-pre">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-2 sm:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
+                    <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
+                    $700
+                    <img src="./image/delling.svg" class="absolute top-0 h-full">
+                    </span>
+                    <span class="text-white font-bold text-[32px] sm:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
+                  </li>
+                  <li class="text-white text-[8px] sm:text-[10px] font-thin">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
+                <img src="./image/pd-01.png" class="absolute bottom-0 -right-6 sm:-right-10 w-[90px] sm:w-[140px]">
               </div>
             </div>
           </div>
@@ -407,7 +447,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xe:h-[860px
 
       <div 
       x-show="status === 'price'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g3" 
+      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g3" 
       :class="{ 'mt-16': isopen }">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
@@ -423,7 +463,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xe:h-[860px
 
       <div 
       x-show="status === 'rebate'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g4">
+      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g4">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
