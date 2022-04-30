@@ -97,7 +97,7 @@ style="background-image: url('./image/banner-01.png');">
         class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt1">
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px] lg:text-[16px]">RETAIL</li>
-            <li class="text-white py-4 font-bold text-[32px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white py-4 font-bold text-[46px]"><span class="text-[24px]">$</span>700</li>
             <li class="text-white text-[10px] font-thin">*50 copies only</li>
           </ul>
         </div>
@@ -117,7 +117,7 @@ style="background-image: url('./image/banner-01.png');">
                     $700
                     <img src="./image/delling.svg" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white font-bold text-[32px]"><span class="text-[24px]">$</span>199</span>
+                    <span class="text-white font-bold text-[46px]"><span class="text-[24px]">$</span>199</span>
                   </li>
                   <li class="text-white text-[10px] font-thin">*50 copies only</li>
                 </ul>
@@ -138,7 +138,9 @@ style="background-image: url('./image/banner-01.png');">
 
       <div 
       x-show="status === 'price'"
-      class="w-full flex flex-row justify-center space-x-4 py-6 px-2 sm:px-12 g1">
+      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g1">
+        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <div class="flex flex-row">
         <input 
         type="email" 
         id="email" 
@@ -146,11 +148,14 @@ style="background-image: url('./image/banner-01.png');">
         <button 
         type="submit" 
         class="w-2/5 bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
       </div>
 
       <div 
       x-show="status === 'rebate'"
-      class="w-full flex flex-row justify-center space-x-4 py-6 px-2 sm:px-12 g2">
+      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g2">
+        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <div class="flex flex-row">
         <input 
         type="email" 
         id="email" 
@@ -158,6 +163,7 @@ style="background-image: url('./image/banner-01.png');">
         <button 
         type="submit" 
         class="w-2/5 bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
       </div>
     </div>
   </div>
@@ -363,7 +369,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[920px
         class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt3">
           <ul class="flex flex-col items-center"> 
             <li class="text-white text-[12px] lg:text-[16px]">RETAIL</li>
-            <li class="text-white py-4 font-bold text-[32px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white py-4 font-bold text-[46px]"><span class="text-[24px]">$</span>700</li>
             <li class="text-white text-[10px] font-thin">*50 copies only</li>
           </ul>
         </div>
@@ -383,7 +389,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[920px
                     $700
                     <img src="./image/delling.svg" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white font-bold text-[32px]"><span class="text-[24px]">$</span>199</span>
+                    <span class="text-white font-bold text-[46px]"><span class="text-[24px]">$</span>199</span>
                   </li>
                   <li class="text-white text-[10px] font-thin">*50 copies only</li>
                 </ul>
@@ -405,8 +411,10 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[920px
 
       <div 
       x-show="status === 'price'"
-      class="w-full flex flex-row justify-center space-x-4 py-6 px-2 sm:px-12 g3" 
+      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g3" 
       :class="{ 'mt-16': isopen }">
+        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <div class="flex flex-row">
         <input 
         type="email" 
         id="email" 
@@ -414,11 +422,14 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[920px
         <button 
         type="submit" 
         class="w-2/5 bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
       </div>
 
       <div 
       x-show="status === 'rebate'"
-      class="w-full flex flex-row justify-center space-x-4 py-6 px-2 sm:px-12 g4">
+      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g4">
+        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <div class="flex flex-row">
         <input 
         type="email" 
         id="email" 
@@ -426,6 +437,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[920px
         <button 
         type="submit" 
         class="w-2/5 bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
       </div>
 
     </div>
