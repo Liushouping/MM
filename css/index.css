@@ -50,6 +50,6 @@ input::-webkit-inner-spin-button {
    right: 0;
    bottom: 0;
    left: 0;
-   background: url(../image/vapor-02.png) center no-repeat;
+   background: url(./image/banner-01.png) center no-repeat;
    background-size: cover;
 }
