@@ -138,7 +138,7 @@ style="background-image: url('./image/banner-01.png');">
 
       <div 
       x-show="status === 'price'"
-      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g1">
+      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g1">
         <p class="px-4 text-white">Your Email to enter the raffle:</p>
         <div class="flex flex-row">
         <input 
@@ -153,7 +153,7 @@ style="background-image: url('./image/banner-01.png');">
 
       <div 
       x-show="status === 'rebate'"
-      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g2">
+      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g2">
         <p class="px-4 text-white">Your Email to enter the raffle:</p>
         <div class="flex flex-row">
         <input 
@@ -328,7 +328,7 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
 
 <section 
 x-data="{ status: 'all' }"
-class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[1020px] lg:h-screen w-full flex justify-center items-center overflow-hidden">
+class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px] lg:h-screen w-full flex justify-center items-center overflow-hidden">
   <div 
   class="max-w-5xl w-full flex flex-col justify-center items-center lg:flex-row z-20 lg:pt-20">
     <div class="md:w-1/2 flex flex-col justify-center items-center">
@@ -411,7 +411,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[1020p
 
       <div 
       x-show="status === 'price'"
-      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g3" 
+      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g3" 
       :class="{ 'mt-16': isopen }">
         <p class="px-4 text-white">Your Email to enter the raffle:</p>
         <div class="flex flex-row">
@@ -427,7 +427,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[1020p
 
       <div 
       x-show="status === 'rebate'"
-      class="w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g4">
+      class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g4">
         <p class="px-4 text-white">Your Email to enter the raffle:</p>
         <div class="flex flex-row">
         <input 
@@ -445,7 +445,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[1020p
 </section>
 
 <footer class="w-full bg-deepblue w-full h-full flex justify-center">
-  <div class="max-w-5xl w-full flex flex-col sm:flex-row justify-center items-center space-x-12 py-6 px-4 hidden sm:flex">
+  <div class="max-w-5xl w-full flex flex-col sm:flex-row justify-center items-center space-x-12 py-6 px-16 hidden sm:flex">
     <div class="flex flex-col">
       <img src="./image/art-logo.png" class="w-[180px]">
       <p class="text-white text-[12px] pt-2">©2021 ALLizART. All rights reserved.</p>
