@@ -1,0 +1,488 @@
+<!doctype html>
+<html 
+class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Allizart</title>
+  <script src="./js/tailwind@3.0.14.js"></script>
+  <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/swiper-bundle.min.css" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'se': '375px',
+          'xs': '414px',
+          'sm': '768px',
+          'md': '992px',
+          'ld': '1024px',
+          'lg': '1366px',
+          'xl': '1920px',
+        },
+        extend: {
+          colors: {
+            textblue: '#2E0E7C',
+            darkblue: '#080B1A',
+            deepblue: '#080B1A',
+            lightblue: '#01003A',
+            deepred: '#9E1533',
+            lightred: '#E01E49',
+            instruction: "#F2F2F2",
+            parther: '#DCDCDC',
+            buttonhover: '#EF443F',
+            fontred: '#FF3631',
+            charyred: '#E01E49',
+            lightgreen: '#4CD2AD',
+            linecolor: '#4c4c4c',
+            timecolor: '#9C9C9C',
+          },
+        },
+        fontFamily: {
+          'sans': ['Prompt', 'sans-serif'],
+          'beatstreet': ['beatstreet', 'sans-serif']
+        },
+      }
+    }
+  </script>
+</head>
+<body class="tracking-[1px]">
+
+<header class="fixed w-full h-[60px] px-10 flex items-center z-50" 
+style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
+  <div>
+    <img src="./image/art-logo.png" class="w-[90px]">
+  </div>
+</header>
+
+<section 
+class="relative bg-cover bg-center h-[1020px] md:h-screen w-full flex justify-center items-center" 
+style="background-image: url('./image/banner-01.png');">
+  <div class="h-[190px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
+  <div 
+  class="max-w-5xl w-full flex flex-col md:flex-row z-20">
+    <div class="w-full md:w-1/2 flex justify-center items-center">
+      <img src="./image/index_GK_IMG_0285_1366.png" class="h-[560px]">
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
+      <h3 class="text-lightred font-bold text-[56px]">LIMITED RELEASE</h3>
+      <h4 class="text-white text-[20px] font-bold">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 text-5xl font-bold text-[66px]">RAFFLES ONLY</h3>
+
+      <div class="flex flex-row space-x-2 w-full px-10 md:px-2">
+        <div 
+        class="w-2/5 h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-sm">RETAIL</li>
+            <li class="text-white text-2xl py-6">$700</li>
+            <li class="text-white text-sm">*50 copies only</li>
+          </ul>
+        </div>
+        <div class="w-3/5 h-[190px]">
+          <div 
+          class="w-full h-full bg-gradient-to-r from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
+            <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
+
+            <div class="w-full px-8 flex flex-row">
+              <div class="w-4/5">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-sm">FOMO STONE HOLDER</li>
+                  <li class="text-white text-2xl py-6 flex flex-row space-x-6">
+                    <span>$700</span>
+                    <span>$199</span>
+                  </li>
+                  <li class="text-white text-sm">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img src="./image/fomo.png" class="absolute top-2 -right-12 w-[60px]">
+                <img src="./image/pd-01.png" class="absolute -right-12 w-[140px]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section 
+class="relative bg-cover bg-center h-[1020px] md:h-screen w-full flex justify-center items-center" 
+style="background-image: url('./image/banner-01.png');">
+  <div class="h-[190px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
+  <div 
+  class="max-w-5xl w-full flex flex-col md:flex-row z-20">
+    <div class="w-full md:w-1/2 flex justify-center items-center">
+      <img src="./image/index_GK_IMG_0285_1366.png" class="h-[560px]">
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
+      <h3 class="text-lightred font-bold text-[56px]">LIMITED RELEASE</h3>
+      <h4 class="text-white text-[20px] font-bold">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 text-5xl font-bold text-[66px]">RAFFLES ONLY</h3>
+
+      <div class="flex flex-row space-x-6 w-full px-10 md:px-2">
+        <div 
+        class="w-2/5 h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-sm">RETAIL</li>
+            <li class="text-white text-2xl py-6">$700</li>
+            <li class="text-white text-sm">*50 copies only</li>
+          </ul>
+        </div>
+        <div class="w-3/5 h-[190px] flex flex-col justify-center space-y-2">
+          <h5 class="text-white text-sm">Your Email to enter the raffle:</h5>
+          <input 
+          type="email" 
+          id="email" 
+          class="bg-red-700 text-gray-900 text-sm rounded-xl block w-full p-2.5" required>
+          <button 
+          type="submit" 
+          class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section 
+class="relative bg-cover bg-center h-[1020px] md:h-screen w-full flex justify-center items-center" 
+style="background-image: url('./image/banner-01.png');">
+  <div class="h-[190px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
+  <div 
+  class="max-w-5xl w-full flex flex-col md:flex-row z-20">
+    <div class="w-full md:w-1/2 flex justify-center items-center">
+      <img src="./image/index_GK_IMG_0285_1366.png" class="h-[560px]">
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
+      <h3 class="text-lightred font-bold text-[56px]">LIMITED RELEASE</h3>
+      <h4 class="text-white text-[20px] font-bold">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 text-5xl font-bold text-[66px]">RAFFLES ONLY</h3>
+
+      <div class="flex flex-row space-x-6 w-full px-10 md:px-2">
+        <div class="w-1/2 h-[190px]">
+          <div 
+          class="w-full h-full bg-gradient-to-r from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
+            <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
+
+            <div class="w-full px-8 flex flex-row">
+              <div class="w-4/5">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-sm">FOMO STONE HOLDER</li>
+                  <li class="text-white text-2xl py-6 flex flex-row space-x-6">
+                    <span>$700</span>
+                    <span>$199</span>
+                  </li>
+                  <li class="text-white text-sm">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img src="./image/fomo.png" class="absolute top-2 -right-12 w-[60px]">
+                <img src="./image/pd-01.png" class="absolute -right-12 w-[140px]">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 h-[190px] flex flex-col justify-center space-y-2">
+          <h5 class="text-white text-sm">Your Email to enter the raffle:</h5>
+          <input 
+          type="email" 
+          id="email" 
+          class="bg-red-700 text-gray-900 text-sm rounded-xl block w-full p-2.5" required>
+          <button 
+          type="submit" 
+          class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section 
+class="flex justify-center items-center bg-instruction">
+    <div 
+    class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-4">
+        <div 
+        class="grid grid-cols-3 gap-4 py-10 md:py-20">
+            <div 
+            class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
+                <img src="./image/p1.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">Polystone,PU</p>
+            </div>
+            <div 
+            class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
+                <img src="./image/p2.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">1/6th</p>
+            </div>
+            <div 
+            class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
+                <img src="./image/p3.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">40 x 32 x 32 cm</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section 
+class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
+
+  <div 
+  class="max-w-5xl mx-auto w-full overflow-hidden px-4 space-y-4">
+  	<div 
+    class="text-white flex items-center justify-center py-2">
+  		<h3 
+      class="text-[2rem] sm:text-[3rem] ld:text-[4rem]">INFORMATION</h3>
+  	</div>
+  	<div 
+    x-data="{ open: true }" 
+  	class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10 relative">
+      <div 
+      class="absolute right-5 top-5 text-white hidden" 
+      @click="open = !open">
+        <button type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+  		<h5 
+      class="text-lightred pb-4 text-2xl">ABOUT</h5>
+  		<p 
+      class="font-light text-xs md:text-sm text-white text-left overflow-y-hidden transition-all ease-in-out duration-500 " 
+      :class="{'h-96': open, 'h-0': !open}">
+      The Last: Naruto the Movie has a red scarf bringing out the story’s beginning and end! In regards to this manga, Naruto, the scarf is a must-have for many ninjas, especially for Naruto Uzumaki, the red scarf has an irreplaceable special meaning. On the poster for The Last: Naruto the Movie, the main visual is Naruto Uzumaki with the red scarf wrapped around his neck! This red scarf is a representation of a love story because it was knitted by Hinata Hyuga. Although the scarf has been through countless battles and has sustained damage, Hinata still persistently knits the scarf over and over again, with every needle and thread representing her love for Naruto and announcing that the love story between the two of characters will begin. In order to bring the classic main visual on the poster, Zodiakos Studio went through the process of restoring the main character on the original poster, including Naruto’s expression and charm through refined engraving and painting, demonstrating expertise in restoration – even details of the knit patterns on the scarf are so realistic that one can see the restoration artist’s experienced sculpting abilities and also including the scarf’s flowing design, demonstrating incredibly vivid and dynamic visual effects – adding the perfect finishing touches on this GK. In terms of the scenes that players value, the studio definitely did not slack on either. In the most realistic aspect, the studio perfectly replicated the footprints in the snow through work with glitter to show the shimmering effect of snow grounds and a small Naruto snowman off to the side, giving a cute and lovable vibe. This GK is definitely a very detailed work! Zodiakos Studio is the studio for authentic GK, possessing top-notch craftsmanship and pursuit of perfection! All packaging for GK works include a luxury box, Styrofoam drawstring, perfect sealant, unboxing gloves, and the most important for the work – certification of authenticity and serial number iron plate. It is definitely a top-notch work of art!</p>
+  	</div>
+  	<div 
+  	class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10">
+  		<h5 
+      class="text-lightred pb-4 text-2xl">DETAILS</h5>
+  		<p 
+      class="font-light text-xs md:text-sm text-white text-left">
+      Product Serial Number: Z.S-001<br>
+      Scale: 1/6<br>
+      Dimensions: 40cm (H) x 32cm (W) x 32cm (D)<br>
+      Weight: 4.5kg<br>
+      Material: Polystone, PU<br>
+      Packaging Material: Styrofoam, box, leather<br>
+      Delivery: 2022-2023
+      </p>
+  	</div>
+
+  </div>
+
+</section>
+
+<section class="bg-black">
+  <div 
+  id="product" 
+  class="swiper relative py-12 md:mr-40 max-h-[420px]">
+    <div 
+    class="swiper-wrapper relative">
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="./image/s2.JPG"
+        data-type="image">
+          <img src="./image/s2.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="./image/s2.JPG"
+        data-type="image">
+          <img src="./image/s2.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="./image/s2.JPG"
+        data-type="image">
+          <img src="./image/s1.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="./image/s2.JPG"
+        data-type="image">
+          <img src="./image/s2.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="./image/s2.JPG"
+        data-type="image">
+          <img src="./image/s1.JPG">
+        </a>
+      </div>
+    </div>
+    <div 
+    class="absolute right-0 bottom-12 bg-white flex flex-row z-50">
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="flex items-center justify-center">
+                <button type="button" class="bn1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+    </div>
+    <div 
+    class="absolute left-0 bottom-12 bg-white flex flex-row z-50">
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="flex items-center justify-center">
+                <button type="button" class="bp2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+    </div>
+  </div>
+</section>
+
+<section 
+class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex justify-center items-center overflow-hidden">
+  <div 
+  class="max-w-5xl w-full flex flex-row z-20">
+    <div class="md:w-1/2 flex justify-center items-center">
+      <div 
+      class="absolute object-cover top-0 -left-32">
+        <img src="./image/index_GK_IMG_0285_1366.png" class="w-full h-full">
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center z-20">
+      <h3 class="text-gray-900 font-bold text-[56px]">LIMITED RELEASE</h3>
+      <h4 class="text-white text-[20px] font-bold">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 text-5xl font-bold text-[66px]">RAFFLES ONLY</h3>
+
+      <div class="flex flex-row space-x-2 w-full px-10 md:px-2">
+        <div 
+        class="w-2/5 h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-sm">RETAIL</li>
+            <li class="text-white text-2xl py-6">$700</li>
+            <li class="text-white text-sm">*50 copies only</li>
+          </ul>
+        </div>
+        <div class="w-3/5 h-[190px]">
+          <div 
+          class="w-full h-full bg-gradient-to-r from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
+            <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
+
+            <div class="w-full px-8 flex flex-row">
+              <div class="w-4/5">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-sm">FOMO STONE HOLDER</li>
+                  <li class="text-white text-2xl py-6 flex flex-row space-x-6">
+                    <span>$700</span>
+                    <span>$199</span>
+                  </li>
+                  <li class="text-white text-sm">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img src="./image/fomo.png" class="absolute top-2 -right-12 w-[60px]">
+                <img src="./image/pd-01.png" class="absolute -right-12 w-[140px]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="w-full bg-deepblue w-full h-[120px] flex justify-center">
+  <div class="max-w-5xl w-full flex flex-row justify-center items-center space-x-12">
+    <div class="flex flex-col">
+      <img src="./image/art-logo.png" class="w-[160px]">
+      <p class="text-white text-xs pt-2">©2021 ALLizART. All rights reserved.</p>
+    </div>
+    <div class="text-lightred text-xl">More limited exclusive anime figures to arrive soon. Stay-tuned!</div>
+  </div>
+</footer>
+
+<button 
+x-data="topBtn" 
+@click="scrolltoTop" 
+id="topButton" 
+class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+  </svg>
+  <p 
+  class="mt-4 tracking-widest" 
+  style="writing-mode: vertical-lr;">BACK TO TOP</p>
+</button>
+
+<script src="./js/swiper@7.4.1.js"></script>
+<script src="./js/fslightbox@3.0.9.js"></script>
+<script src="./js/alpinejs@3.2.3.js" defer></script>
+<script>
+    // back to top
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('topBtn', () => ({
+                scrolltoTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            }));
+        });
+
+        const topBtn = document.getElementById("topButton");
+        window.onscroll = () => {
+            (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ?
+            topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
+
+        }
+    // * Swiper
+    const swiper = new Swiper('#product', {
+      loop: true,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 1000,
+      },
+      navigation: {
+        nextEl: '.bp2',
+        prevEl: '.bn1',
+        clickable: true,
+      },
+      breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+        },
+    });
+</script>
+</body>
+</html>

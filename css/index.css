@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+   Font Family
+*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'beatstreet';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../font/beatstreet.ttf) format("opentype");
+}
+/* 
+   Base
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+}
+/*
+ fixed for ios
+*/
+.bg-vapor-fixed::before {
+   content: ' ';
+   position: fixed;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: url(../image/vapor-02.png) center no-repeat;
+   background-size: cover;
+}
