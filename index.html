@@ -26,12 +26,12 @@ class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[820px] md:h-s
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
-  class="relative max-w-5xl w-full flex flex-col md:flex-row">
+  class="relative max-w-5xl w-full flex flex-col md:flex-row mx-auto">
     <div 
-    class="w-full lg:w-2/3 flex justify-center md:justify-end items-center z-20 relative">
+    class="w-full lg:w-2/3 flex justify-center lg:justify-end items-center z-20 relative">
       <img 
       src="./image/index_GK_IMG_0285_1366.png" 
-      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 md:-right-12">
+      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 lg:-right-12">
     </div>
 
     <div class="w-full flex flex-col justify-center items-center z-30 pb-20">
@@ -85,17 +85,17 @@ style="background-image: url('./image/banner-01.png');">
 </section>
 
 <section 
-x-show="status === 'price';"
+x-show="status === 'price';" 
 class="relative overflow-hidden bg-cover bg-center h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16 transition-all duration-500" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
-  class="max-w-5xl w-full flex flex-col md:flex-row z-20">
+  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto">
     <div 
-    class="w-full lg:w-1/2 flex justify-center md:justify-end items-center z-20 relative">
+    class="w-full lg:w-2/3 flex justify-center md:justify-end items-center z-20 relative">
       <img 
       src="./image/index_GK_IMG_0285_1366.png" 
-      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 md:-right-12">
+      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 lg:-right-12">
     </div>
 
     <div class="w-full flex flex-col justify-center items-center z-30 pb-20">
@@ -125,7 +125,7 @@ style="background-image: url('./image/banner-01.png');">
           <input 
           type="email" 
           id="email" 
-          class="bg-red-100 bg-opacity-10 text-gray-900 text-[14px] rounded-xl block w-full p-2.5" required>
+          class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl block w-full p-2.5" required>
           <button 
           type="submit" 
           class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
@@ -137,16 +137,16 @@ style="background-image: url('./image/banner-01.png');">
 
 <section 
 x-show="status === 'rebate'"
-class="relative overflow-hidden bg-cover bg-center h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16 transition-all duration-500"
+class="relative overflow-hidden bg-cover bg-center h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16"
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
-  class="max-w-5xl w-full flex flex-col md:flex-row z-20">
+  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto">
     <div 
     class="w-full lg:w-1/2 flex justify-center md:justify-end items-center z-20 relative">
       <img 
       src="./image/index_GK_IMG_0285_1366.png" 
-      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 md:-right-12">
+      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 lg:-right-12">
     </div>
 
     <div class="w-full flex flex-col justify-center items-center z-30 pb-20">
@@ -184,7 +184,8 @@ style="background-image: url('./image/banner-01.png');">
           </div>
         </div>
         <div 
-        class="lg:w-[300px] h-[190px] flex flex-col justify-center space-y-2">
+        class="lg:w-[300px] h-[190px] flex flex-col justify-center space-y-2" 
+        :class="{ opacity-0 : 'status' }">
           <div class="flex justify-end">
             <a href="/">
               <img src="./image/back.svg" class="w-[24px] h-[24px]">
@@ -194,7 +195,7 @@ style="background-image: url('./image/banner-01.png');">
           <input 
           type="email" 
           id="email" 
-          class="bg-red-100 bg-opacity-10 text-gray-900 text-[14px] rounded-xl block w-full p-2.5" required>
+          class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl block w-full p-2.5" required>
           <button 
           type="submit" 
           class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
@@ -366,7 +367,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex j
   class="max-w-5xl w-full flex flex-row z-20">
     <div class="md:w-1/2 flex justify-center items-center">
       <div 
-      class="absolute object-cover top-0 -left-36 md:left-20">
+      class="absolute object-cover top-0 -left-36 md:left-8">
         <img src="./image/index_GK_IMG_0285_1366.png" class="w-full h-full md:h-[1460px]">
       </div>
     </div>

@@ -33,7 +33,6 @@ tailwind.config = {
         },
       }
 }
-
     // back to top
         document.addEventListener('alpine:init', () => {
             Alpine.data('topBtn', () => ({
