@@ -14,7 +14,7 @@ class="scroll-smooth">
       theme: {
         screens: {
           'se': '375px',
-          'xs': '414px',
+          'xs': '421px',
           'sm': '768px',
           'md': '992px',
           'ld': '1024px',
@@ -61,7 +61,7 @@ style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
 x-data="{ status: 'all' }">
 <section 
 x-show="status === 'all'"
-class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
+class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[820px] sm:h-[50vh] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
@@ -81,7 +81,7 @@ style="background-image: url('./image/banner-01.png');">
       </h4>
       <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
 
-      <div class="flex flex-col xs:flex-row space-y-8 xs:space-y-0 xs:space-x-4 w-full px-10 md:px-2 justify-center">
+      <div class="flex flex-row space-x-4 w-full px-10 md:px-2 justify-center">
         <div 
         @click="status = 'price'" 
         class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
@@ -122,15 +122,16 @@ style="background-image: url('./image/banner-01.png');">
       </div>
     </div>
   </div>
+
 </section>
 
 <section 
 x-show="status === 'price';" 
-class="relative overflow-hidden bg-fixed bg-cover h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16 transition-all duration-500" 
+class="relative overflow-hidden bg-fixed bg-cover h-[820px] sm:h-[50vh] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
-  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto">
+  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto hidden xs:flex">
     <div 
     class="w-full lg:w-2/3 flex justify-center md:justify-end items-center z-20 relative">
       <img 
@@ -174,15 +175,87 @@ style="background-image: url('./image/banner-01.png');">
       </div>
     </div>
   </div>
+  <div 
+  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto flex xs:hidden">
+
+    <div class="w-full flex flex-col justify-center items-center z-30 pb-20">
+      <h3 class="text-lightred font-bold text-[42px] md:text-[56px] leading-none">LIMITED RELEASE</h3>
+      <h4 class="text-white text-[14px] md:text-[19px] font-bold"
+      style="letter-spacing: 1.3px">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 font-bold text-[48px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+
+      <div 
+      class="w-full flex justify-center md:justify-end items-center z-10 relative -mb-14">
+        <img 
+        src="./image/index_GK_IMG_0285_1366.png" 
+        class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 lg:-right-12">
+      </div>
+
+      <div class="flex flex-row space-x-2 w-full justify-center pl-2 pr-10 z-30">
+        <div 
+        @click="status = 'price'" 
+        class="max-w-[120px] w-full h-[120px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-[12px]">RETAIL</li>
+            <li class="text-white py-2 font-bold text-[32px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[10px] font-thin">*50 copies only</li>
+          </ul>
+        </div>
+        <div 
+        @click="status = 'rebate'" 
+        class="max-w-[200px] w-full h-[120px] ">
+          <div 
+          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
+            <img src="./image/MM-logo.png" class="absolute -top-10 left-12 w-[120px]">
+
+            <div class="w-full px-2 flex flex-row">
+              <div class="w-full">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-[12px]">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-2 flex flex-row space-x-2 lg:space-x-6 items-center">
+                    <span class="relative text-gray-300 text-[14px] font-bold">
+                    $700
+                    <img src="./image/delling.svg" class="absolute top-0 h-full">
+                    </span>
+                    <span class="text-white font-bold text-[32px]"><span class="text-[24px]">$</span>199</span>
+                  </li>
+                  <li class="text-white text-[10px] font-thin">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
+                <img src="./image/pd-01.png" class="absolute bottom-0 -right-10 w-[90px]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col w-full px-4 justify-center">
+        <div 
+        class="w-full h-[190px] flex flex-col justify-center space-y-2">
+          <h5 class="text-white text-[12px]">Your Email to enter the raffle:</h5>
+          <input 
+          type="email" 
+          id="email" 
+          class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl block w-full p-2.5" required>
+          <button 
+          type="submit" 
+          class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section 
 x-show="status === 'rebate'"
-class="relative overflow-hidden bg-fixed bg-cover h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16"
+class="relative overflow-hidden bg-fixed bg-cover h-[920px] sm:h-[50vh] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16"
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
-  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto">
+  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto hidden xs:flex">
     <div 
     class="w-full lg:w-2/3 flex justify-center md:justify-end items-center z-20 relative">
       <img 
@@ -241,6 +314,78 @@ style="background-image: url('./image/banner-01.png');">
           <button 
           type="submit" 
           class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div 
+  class="relative max-w-5xl w-full flex flex-col md:flex-row z-20 mx-auto flex xs:hidden">
+
+    <div class="w-full flex flex-col justify-center items-center z-30 pb-20">
+      <h3 class="text-lightred font-bold text-[42px] md:text-[56px] leading-none">LIMITED RELEASE</h3>
+      <h4 class="text-white text-[14px] md:text-[19px] font-bold"
+      style="letter-spacing: 1.3px">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 font-bold text-[48px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+
+      <div 
+      class="w-full flex justify-center md:justify-end items-center z-10 relative -mb-14">
+        <img 
+        src="./image/index_GK_IMG_0285_1366.png" 
+        class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 lg:-right-12">
+      </div>
+
+      <div class="flex flex-row space-x-2 w-full justify-center pl-2 pr-10 z-30">
+        <div 
+        @click="status = 'price'" 
+        class="max-w-[120px] w-full h-[120px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-[12px]">RETAIL</li>
+            <li class="text-white py-2 font-bold text-[32px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[10px] font-thin">*50 copies only</li>
+          </ul>
+        </div>
+        <div 
+        @click="status = 'rebate'" 
+        class="max-w-[200px] w-full h-[120px] ">
+          <div 
+          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
+            <img src="./image/MM-logo.png" class="absolute -top-10 left-12 w-[120px]">
+
+            <div class="w-full px-2 flex flex-row">
+              <div class="w-full">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-[12px]">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-2 flex flex-row space-x-2 lg:space-x-6 items-center">
+                    <span class="relative text-gray-300 text-[14px] font-bold">
+                    $700
+                    <img src="./image/delling.svg" class="absolute top-0 h-full">
+                    </span>
+                    <span class="text-white font-bold text-[32px]"><span class="text-[24px]">$</span>199</span>
+                  </li>
+                  <li class="text-white text-[10px] font-thin">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
+                <img src="./image/pd-01.png" class="absolute bottom-0 -right-10 w-[90px]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col w-full px-4 justify-center">
+        <div 
+        class="w-full h-[190px] flex flex-col justify-center space-y-2">
+          <h5 class="text-white text-[12px]">Your Email to enter the raffle:</h5>
+          <input 
+          type="email" 
+          id="email" 
+          class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl block w-full p-2.5" required>
+          <button 
+          type="submit" 
+          class="w-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
         </div>
       </div>
     </div>
@@ -422,10 +567,10 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex j
       </h4>
       <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
 
-      <div class="flex flex-col xs:flex-row space-y-8 xs:space-y-0 xs:space-x-4 w-full px-10 md:px-2 justify-center">
+      <div class="flex flex-row space-x-4 w-full px-10 md:px-2 justify-center">
         <div 
         class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
-          <ul class="flex flex-col items-center">
+          <ul class="flex flex-col items-center"> 
             <li class="text-white text-[12px]">RETAIL</li>
             <li class="text-white py-4 font-bold text-[32px]"><span class="text-[24px]">$</span>700</li>
             <li class="text-white text-[10px] font-thin">*50 copies only</li>
@@ -463,13 +608,20 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex j
   </div>
 </section>
 
-<footer class="w-full bg-deepblue w-full h-[120px] flex justify-center">
-  <div class="max-w-5xl w-full flex flex-row justify-center items-center space-x-12">
+<footer class="w-full bg-deepblue w-full h-full flex justify-center">
+  <div class="max-w-5xl w-full flex flex-col sm:flex-row justify-center items-center space-x-12 py-6 px-4 hidden sm:flex">
     <div class="flex flex-col">
       <img src="./image/art-logo.png" class="w-[180px]">
       <p class="text-white text-[12px] pt-2">©2021 ALLizART. All rights reserved.</p>
     </div>
     <div class="text-lightred text-[16px] font-thin">More limited exclusive anime figures to arrive soon. Stay-tuned!</div>
+  </div>
+  <div class="max-w-5xl w-full flex flex-col sm:flex-row justify-center items-center space-x-12 py-6 px-4 flex sm:hidden">
+    <div class="flex flex-col">
+      <img src="./image/art-logo.png" class="w-[180px]">
+    </div>
+    <div class="text-lightred text-[16px] font-thin py-4">More limited exclusive anime figures to arrive soon. Stay-tuned!</div>
+    <p class="text-white text-[12px] pt-2">©2021 ALLizART. All rights reserved.</p>
   </div>
 </footer>
 
