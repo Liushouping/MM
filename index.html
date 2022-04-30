@@ -96,7 +96,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
             <li class="text-white xs:py-2 font-bold text-[32px] xs:text-[46px]"><span class="text-[24px]">$</span>700</li>
-            <li class="text-white text-[10px] font-thin whitespace-pre">*50 copies only</li>
+            <li class="text-white text-[8px] xs:text-[10px] font-thin whitespace-pre">*50 copies only</li>
           </ul>
         </div>
         <div 
@@ -117,7 +117,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
                     </span>
                     <span class="text-white font-bold text-[32px] xs:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
                   </li>
-                  <li class="text-white text-[10px] font-thin">*50 copies only</li>
+                  <li class="text-white text-[8px] xs:text-[10px] font-thin">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
@@ -137,7 +137,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
       <div 
       x-show="status === 'price'"
       class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g1">
-        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
         type="email" 
@@ -145,14 +145,14 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
         class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl w-3/5 p-2.5" required>
         <button 
         type="submit" 
-        class="w-2/5 bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        class="w-2/5 bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2 text-[14px]">SUBMIT RAFFLE</button>
         </div>
       </div>
 
       <div 
       x-show="status === 'rebate'"
       class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g2">
-        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
         type="email" 
@@ -160,7 +160,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
         class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl w-3/5 p-2.5" required>
         <button 
         type="submit" 
-        class="w-2/5 bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        class="w-2/5 bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2 text-[14px]">SUBMIT RAFFLE</button>
         </div>
       </div>
     </div>
@@ -360,46 +360,6 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
         <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
       </div>
 
-<!--       <div class="flex flex-row space-x-4 w-full pl-2 pr-8 md:px-2 justify-center">
-        <div 
-        @click="status = 'price'" 
-        class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt3">
-          <ul class="flex flex-col items-center"> 
-            <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
-            <li class="text-white py-2 font-bold text-[46px]"><span class="text-[24px]">$</span>700</li>
-            <li class="text-white text-[10px] font-thin">*50 copies only</li>
-          </ul>
-        </div>
-        <div 
-        @click="status = 'rebate';isopen = !isopen" 
-        class="max-w-[320px] w-full h-[190px] bt4">
-          <div 
-          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
-            <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
-
-            <div class="w-full px-6 flex flex-row">
-              <div class="w-4/5">
-                <ul class="flex flex-col items-start">
-                  <li class="text-white text-[12px] sm:text-[16px]">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
-                    <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
-                    $700
-                    <img src="./image/delling.svg" class="absolute top-0 h-full">
-                    </span>
-                    <span class="text-white font-bold text-[46px]"><span class="text-[24px]">$</span>199</span>
-                  </li>
-                  <li class="text-white text-[10px] font-thin">*50 copies only</li>
-                </ul>
-              </div>
-              <div class="w-1/5 flex items-center">
-                <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
-                <img src="./image/pd-01.png" class="absolute -right-10 w-[140px]">
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div> -->
       <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
         <div 
         @click="status = 'price'" 
@@ -407,7 +367,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
             <li class="text-white xs:py-2 font-bold text-[32px] xs:text-[46px]"><span class="text-[24px]">$</span>700</li>
-            <li class="text-white text-[10px] font-thin whitespace-pre">*50 copies only</li>
+            <li class="text-white text-[8px] xs:text-[10px] font-thin whitespace-pre">*50 copies only</li>
           </ul>
         </div>
         <div 
@@ -428,7 +388,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
                     </span>
                     <span class="text-white font-bold text-[32px] xs:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
                   </li>
-                  <li class="text-white text-[10px] font-thin">*50 copies only</li>
+                  <li class="text-white text-[8px] xs:text-[10px] font-thin">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
@@ -449,7 +409,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
       x-show="status === 'price'"
       class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g3" 
       :class="{ 'mt-16': isopen }">
-        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
         type="email" 
@@ -457,14 +417,14 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
         class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl w-3/5 p-2.5" required>
         <button 
         type="submit" 
-        class="w-2/5 bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        class="w-2/5 bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2 text-[14px]">SUBMIT RAFFLE</button>
         </div>
       </div>
 
       <div 
       x-show="status === 'rebate'"
       class="max-w-2xl w-full flex flex-col justify-center space-x-4 py-6 px-2 sm:px-12 g4">
-        <p class="px-4 text-white">Your Email to enter the raffle:</p>
+        <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
         type="email" 
@@ -472,7 +432,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
         class="bg-red-100 bg-opacity-10 text-white font-thin text-[14px] rounded-xl w-3/5 p-2.5" required>
         <button 
         type="submit" 
-        class="w-2/5 bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
+        class="w-2/5 bg-gradient-to-t from-deepblue to-lightblue rounded-2xl text-white py-2 text-[14px]">SUBMIT RAFFLE</button>
         </div>
       </div>
 
