@@ -47,16 +47,19 @@ class="scroll-smooth">
     }
   </script>
 </head>
-<body class="tracking-[1px]">
+<body 
+x-data="{ status: 'all' }"
+class="tracking-[1px]">
 
 <header class="fixed w-full h-[60px] px-10 flex items-center z-50" 
 style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
-  <div>
+  <a href="/" class="appearance-none">
     <img src="./image/art-logo.png" class="w-[90px]">
-  </div>
+  </a>
 </header>
 
 <section 
+x-show="status === 'all'"
 class="relative overflow-hidden bg-cover bg-center h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
@@ -78,6 +81,7 @@ style="background-image: url('./image/banner-01.png');">
 
       <div class="flex flex-row space-x-4 w-full px-10 md:px-2">
         <div 
+        @click="status = 'price'" 
         class="w-2/5 h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
           <ul class="flex flex-col items-center">
             <li class="text-white text-sm">RETAIL</li>
@@ -85,7 +89,9 @@ style="background-image: url('./image/banner-01.png');">
             <li class="text-white text-sm">*50 copies only</li>
           </ul>
         </div>
-        <div class="w-3/5 h-[190px]">
+        <div 
+        @click="status = 'rebate'" 
+        class="w-3/5 h-[190px]">
           <div 
           class="w-full h-full bg-gradient-to-r from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
             <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
@@ -117,6 +123,7 @@ style="background-image: url('./image/banner-01.png');">
 </section>
 
 <section 
+x-show="status === 'price'"
 class="relative overflow-hidden bg-cover bg-center h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
@@ -161,6 +168,7 @@ style="background-image: url('./image/banner-01.png');">
 </section>
 
 <section 
+x-show="status === 'rebate'"
 class="relative overflow-hidden bg-cover bg-center h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
