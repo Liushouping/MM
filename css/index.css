@@ -41,3 +41,15 @@ input::-webkit-inner-spin-button {
   opacity: 1;
   visibility: visible;
 }
+
+.bg-vapor-fixed::before {
+   content: ' ';
+   position: fixed;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: url(../image/vapor-02.png) center no-repeat;
+   background-size: cover;
+}
