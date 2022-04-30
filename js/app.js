@@ -33,22 +33,7 @@ tailwind.config = {
         },
       }
 }
-    // back to top
-        // document.addEventListener('alpine:init', () => {
-        //     Alpine.data('topBtn', () => ({
-        //         scrolltoTop() {
-        //             document.body.scrollTop = 0;
-        //             document.documentElement.scrollTop = 0;
-        //         }
-        //     }));
-        // });
 
-        // const topBtn = document.getElementById("topButton");
-        // window.onscroll = () => {
-        //     (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ?
-        //     topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
-
-        // }
 var btn = $('#button');
 
 $(window).scroll(function() {
@@ -90,3 +75,55 @@ btn.on('click', function(e) {
           },
         },
     });
+
+gsap.set(".g1", {
+  x: "-100"
+});
+
+gsap.set(".g2", {
+  x: "-100"
+});
+
+gsap.set(".g3", {
+  x: "-100"
+});
+
+gsap.set(".g4", {
+  x: "-100"
+});
+
+const control1 = gsap.to(".g1", {
+  paused: true,
+  x: "+=100"
+});
+
+const control2 = gsap.to(".g2", {
+  paused: true,
+  x: "+=100"
+});
+
+const control3 = gsap.to(".g3", {
+  paused: true,
+  x: "+=100"
+});
+
+const control4 = gsap.to(".g4", {
+  paused: true,
+  x: "+=100"
+});
+
+document.querySelector(".bt1").addEventListener("click", function () {
+  control1.play(0);
+});
+
+document.querySelector(".bt2").addEventListener("click", function () {
+  control2.play(0);
+});
+
+document.querySelector(".bt3").addEventListener("click", function () {
+  control3.play(0);
+});
+
+document.querySelector(".bt4").addEventListener("click", function () {
+  control4.play(0);
+});
