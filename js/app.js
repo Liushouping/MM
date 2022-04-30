@@ -58,8 +58,8 @@ tailwind.config = {
         delay: 1000,
       },
       navigation: {
-        nextEl: '.bp2',
-        prevEl: '.bn1',
+        nextEl: '.bp1',
+        prevEl: '.bn2',
         clickable: true,
       },
       breakpoints: {
