@@ -22,7 +22,7 @@ style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
 
 <section 
 x-show="status === 'all'"
-class="relative overflow-hidden bg-fixed bg-cover h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
+class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[820px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
@@ -41,10 +41,10 @@ style="background-image: url('./image/banner-01.png');">
       </h4>
       <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
 
-      <div class="flex flex-row space-x-4 w-full px-10 md:px-2 justify-center">
+      <div class="flex flex-col xs:flex-row space-y-8 xs:space-y-0 xs:space-x-4 w-full px-10 md:px-2 justify-center">
         <div 
         @click="status = 'price'" 
-        class="w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4">
+        class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4">
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px]">RETAIL</li>
             <li class="text-white py-4 font-bold text-[32px]"><span class="text-[24px]">$</span>700</li>
@@ -367,9 +367,9 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex j
       </h4>
       <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
 
-      <div class="flex flex-row space-x-4 w-full px-10 md:px-2 justify-center">
+      <div class="flex flex-col xs:flex-row space-y-8 xs:space-y-0 xs:space-x-4 w-full px-10 md:px-2 justify-center">
         <div 
-        class="w-[180px] h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
+        class="max-w-[320px] w-full xs:w-[180px] h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
           <ul class="flex flex-col items-center">
             <li class="text-white text-[12px]">RETAIL</li>
             <li class="text-white py-4 text-[32px] font-bold"><span class="text-[24px]">$</span>700</li>
