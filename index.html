@@ -61,25 +61,37 @@ style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
 x-data="{ status: 'all' }"> -->
 <section 
 x-data="{ status: 'all' }"
-class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[920px] md:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
+class="relative overflow-hidden bg-fixed bg-cover h-[1060px] xs:h-[920px] lg:h-screen w-full flex justify-center items-start md:items-end pb-4 pt-16" 
 style="background-image: url('./image/banner-01.png');">
   <div class="h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
   <div 
-  class="relative max-w-5xl w-full flex flex-col md:flex-row mx-auto">
+  class="relative max-w-5xl w-full flex flex-col lg:flex-row mx-auto">
+
     <div 
-    class="w-full lg:w-2/3 flex justify-center lg:justify-end items-center z-20 relative">
+    class="w-full lg:w-2/3 flex flex-col justify-center lg:justify-end items-center z-20 relative">
+      <div class="flex lg:hidden flex-col">
+        <h3 class="text-lightred font-bold text-[46px] md:text-[56px] leading-none">LIMITED RELEASE</h3>
+        <h4 class="text-white text-[16px] md:text-[19px] font-bold" 
+        style="letter-spacing: 1.3px">
+          <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+        </h4>
+        <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+      </div>
+
       <img 
       src="./image/index_GK_IMG_0285_1366.png" 
-      class="h-[320px] md:h-[560px] pb-4 relative md:absolute md:bottom-4 lg:-right-12">
+      class="h-[320px] lg:h-[420px] pb-4 relative lg:absolute lg:bottom-4 lg:-right-12 scale-150 lg:scale-110">
     </div>
 
     <div class="w-full flex flex-col justify-center items-center z-30 pt-20 pb-10">
+      <div class="hidden lg:flex flex-col">
       <h3 class="text-lightred font-bold text-[46px] md:text-[56px] leading-none">LIMITED RELEASE</h3>
       <h4 class="text-white text-[16px] md:text-[19px] font-bold" 
       style="letter-spacing: 1.3px">
         <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
       </h4>
       <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+      </div>
 
       <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
         <div 
