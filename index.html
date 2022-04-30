@@ -8,44 +8,6 @@ class="scroll-smooth">
   <script src="./js/tailwind@3.0.14.js"></script>
   <link href="./css/index.css" rel="stylesheet" />
   <link href="./css/swiper-bundle.min.css" rel="stylesheet" />
-
-  <script>
-    tailwind.config = {
-      theme: {
-        screens: {
-          'se': '375px',
-          'xs': '414px',
-          'sm': '768px',
-          'md': '992px',
-          'ld': '1024px',
-          'lg': '1366px',
-          'xl': '1920px',
-        },
-        extend: {
-          colors: {
-            textblue: '#2E0E7C',
-            darkblue: '#080B1A',
-            deepblue: '#080B1A',
-            lightblue: '#01003A',
-            deepred: '#9E1533',
-            lightred: '#E01E49',
-            instruction: "#F2F2F2",
-            parther: '#DCDCDC',
-            buttonhover: '#EF443F',
-            fontred: '#FF3631',
-            charyred: '#E01E49',
-            lightgreen: '#4CD2AD',
-            linecolor: '#4c4c4c',
-            timecolor: '#9C9C9C',
-          },
-        },
-        fontFamily: {
-          'sans': ['Prompt', 'sans-serif'],
-          'beatstreet': ['beatstreet', 'sans-serif']
-        },
-      }
-    }
-  </script>
 </head>
 <body 
 x-data="{ status: 'all' }"
@@ -84,9 +46,9 @@ style="background-image: url('./image/banner-01.png');">
         @click="status = 'price'" 
         class="w-[180px] h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
           <ul class="flex flex-col items-center">
-            <li class="text-white text-14px">RETAIL</li>
+            <li class="text-white text-[12px]">RETAIL</li>
             <li class="text-white text-2xl py-6">$700</li>
-            <li class="text-white text-10px">*50 copies only</li>
+            <li class="text-white text-[10px]">*50 copies only</li>
           </ul>
         </div>
         <div 
@@ -96,18 +58,18 @@ style="background-image: url('./image/banner-01.png');">
           class="w-full h-full bg-gradient-to-r from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
             <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
 
-            <div class="w-full px-8 flex flex-row">
+            <div class="w-full px-6 flex flex-row">
               <div class="w-4/5">
                 <ul class="flex flex-col items-start">
-                  <li class="text-white text-14px">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-6 flex flex-row space-x-2 lg:space-x-6">
-                    <span class="relative text-gray-300">
+                  <li class="text-white text-[12px]">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
+                    <span class="relative text-gray-300 text-[14px]">
                     $700
-                    <img src="./image/del.png" class="absolute top-0">
+                    <img src="./image/del.png" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white">$199</span>
+                    <span class="text-white text-2xl">$199</span>
                   </li>
-                  <li class="text-white text-10px">*50 copies only</li>
+                  <li class="text-white text-[10px]">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
@@ -147,17 +109,17 @@ style="background-image: url('./image/banner-01.png');">
         <div 
         class="w-[180px] h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
           <ul class="flex flex-col items-center">
-            <li class="text-white text-14px">RETAIL</li>
+            <li class="text-white text-[10px]">RETAIL</li>
             <li class="text-white text-2xl py-6">$700</li>
-            <li class="text-white text-10px">*50 copies only</li>
+            <li class="text-white text-[10px]">*50 copies only</li>
           </ul>
         </div>
         <div class="w-3/5 h-[190px] flex flex-col justify-center space-y-2">
-          <h5 class="text-white text-14px">Your Email to enter the raffle:</h5>
+          <h5 class="text-white text-[12px]">Your Email to enter the raffle:</h5>
           <input 
           type="email" 
           id="email" 
-          class="bg-white text-gray-900 text-14px rounded-xl block w-full p-2.5" required>
+          class="bg-white text-gray-900 text-[14px] rounded-xl block w-full p-2.5" required>
           <button 
           type="submit" 
           class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
@@ -197,15 +159,15 @@ style="background-image: url('./image/banner-01.png');">
             <div class="w-full px-8 flex flex-row">
               <div class="w-4/5">
                 <ul class="flex flex-col items-start">
-                  <li class="text-white text-14px">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-6 flex flex-row space-x-6">
-                    <span class="relative text-gray-300">
+                  <li class="text-white text-[12px]">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-6 flex flex-row space-x-6 items-center">
+                    <span class="relative text-gray-300 text-sm">
                     $700
-                    <img src="./image/del.png" class="absolute top-0">
+                    <img src="./image/del.png" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white">$199</span>
+                    <span class="text-white text-2xl">$199</span>
                   </li>
-                  <li class="text-white text-10px">*50 copies only</li>
+                  <li class="text-white text-[10px]">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
@@ -216,11 +178,11 @@ style="background-image: url('./image/banner-01.png');">
           </div>
         </div>
         <div class="lg:w-1/2 h-[190px] flex flex-col justify-center space-y-2">
-          <h5 class="text-white text-14px">Your Email to enter the raffle:</h5>
+          <h5 class="text-white text-[12px]">Your Email to enter the raffle:</h5>
           <input 
           type="email" 
           id="email" 
-          class="bg-white text-gray-900 text-14px rounded-xl block w-full p-2.5" required>
+          class="bg-white text-gray-900 text-[14px] rounded-xl block w-full p-2.5" required>
           <button 
           type="submit" 
           class="w-full bg-gradient-to-t from-deepred to-lightred rounded-2xl text-white py-2">SUBMIT RAFFLE</button>
@@ -283,7 +245,7 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
   		<h5 
       class="text-lightred pb-4 text-2xl">ABOUT</h5>
   		<p 
-      class="font-light text-xs md:text-14px text-white text-left overflow-y-hidden transition-all ease-in-out duration-500 " 
+      class="font-light text-xs md:text-[14px] text-white text-left overflow-y-hidden transition-all ease-in-out duration-500 " 
       :class="{'h-96': open, 'h-0': !open}">
       The Last: Naruto the Movie has a red scarf bringing out the story’s beginning and end! In regards to this manga, Naruto, the scarf is a must-have for many ninjas, especially for Naruto Uzumaki, the red scarf has an irreplaceable special meaning. On the poster for The Last: Naruto the Movie, the main visual is Naruto Uzumaki with the red scarf wrapped around his neck! This red scarf is a representation of a love story because it was knitted by Hinata Hyuga. Although the scarf has been through countless battles and has sustained damage, Hinata still persistently knits the scarf over and over again, with every needle and thread representing her love for Naruto and announcing that the love story between the two of characters will begin. In order to bring the classic main visual on the poster, Zodiakos Studio went through the process of restoring the main character on the original poster, including Naruto’s expression and charm through refined engraving and painting, demonstrating expertise in restoration – even details of the knit patterns on the scarf are so realistic that one can see the restoration artist’s experienced sculpting abilities and also including the scarf’s flowing design, demonstrating incredibly vivid and dynamic visual effects – adding the perfect finishing touches on this GK. In terms of the scenes that players value, the studio definitely did not slack on either. In the most realistic aspect, the studio perfectly replicated the footprints in the snow through work with glitter to show the shimmering effect of snow grounds and a small Naruto snowman off to the side, giving a cute and lovable vibe. This GK is definitely a very detailed work! Zodiakos Studio is the studio for authentic GK, possessing top-notch craftsmanship and pursuit of perfection! All packaging for GK works include a luxury box, Styrofoam drawstring, perfect sealant, unboxing gloves, and the most important for the work – certification of authenticity and serial number iron plate. It is definitely a top-notch work of art!</p>
   	</div>
@@ -292,7 +254,7 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
   		<h5 
       class="text-lightred pb-4 text-2xl">DETAILS</h5>
   		<p 
-      class="font-light text-xs md:text-14px text-white text-left">
+      class="font-light text-xs md:text-[14px] text-white text-left">
       Product Serial Number: Z.S-001<br>
       Scale: 1/6<br>
       Dimensions: 40cm (H) x 32cm (W) x 32cm (D)<br>
@@ -406,28 +368,29 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-screen w-full flex j
         <div 
         class="w-[180px] h-[190px] bg-gradient-to-r from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
           <ul class="flex flex-col items-center">
-            <li class="text-white text-14px">RETAIL</li>
+            <li class="text-white text-[12px]">RETAIL</li>
             <li class="text-white text-2xl py-6">$700</li>
-            <li class="text-white text-10px">*50 copies only</li>
+            <li class="text-white text-[10px]">*50 copies only</li>
           </ul>
         </div>
-        <div class="w-3/5 h-[190px]">
+        <div 
+        class="w-3/5 h-[190px]">
           <div 
           class="w-full h-full bg-gradient-to-r from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
             <img src="./image/MM-logo.png" class="absolute -top-12 w-[180px]">
 
-            <div class="w-full px-8 flex flex-row">
+            <div class="w-full px-6 flex flex-row">
               <div class="w-4/5">
                 <ul class="flex flex-col items-start">
-                  <li class="text-white text-14px">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-6 flex flex-row space-x-2 lg:space-x-6">
-                    <span class="relative text-gray-300">
+                  <li class="text-white text-[12px]">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-6 flex flex-row space-x-2 lg:space-x-6 items-center items-center">
+                    <span class="relative text-gray-300 text-sm">
                     $700
-                    <img src="./image/del.png" class="absolute top-0">
+                    <img src="./image/del.png" class="absolute top-0 h-full">
                     </span>
-                    <span class="text-white">$199</span>
+                    <span class="text-white text-2xl">$199</span>
                   </li>
-                  <li class="text-white text-10px">*50 copies only</li>
+                  <li class="text-white text-[10px]">*50 copies only</li>
                 </ul>
               </div>
               <div class="w-1/5 flex items-center">
@@ -468,50 +431,6 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
 <script src="./js/swiper@7.4.1.js"></script>
 <script src="./js/fslightbox@3.0.9.js"></script>
 <script src="./js/alpinejs@3.2.3.js" defer></script>
-<script>
-    // back to top
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('topBtn', () => ({
-                scrolltoTop() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            }));
-        });
-
-        const topBtn = document.getElementById("topButton");
-        window.onscroll = () => {
-            (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ?
-            topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
-
-        }
-    // * Swiper
-    const swiper = new Swiper('#product', {
-      loop: true,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 1000,
-      },
-      navigation: {
-        nextEl: '.bp2',
-        prevEl: '.bn1',
-        clickable: true,
-      },
-      breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-        },
-    });
-</script>
+<script src="./js/app.js"></script>
 </body>
 </html>
