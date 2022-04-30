@@ -137,7 +137,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
 
       <div 
       x-show="status === 'price'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g1">
+      class="max-w-lg w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g1">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
@@ -152,7 +152,7 @@ class="relative overflow-hidden bg-vapor-fixed h-[960px] xs:h-[1020px] lg:h-scre
 
       <div 
       x-show="status === 'rebate'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g2">
+      class="max-w-lg w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g2">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
@@ -361,45 +361,6 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
         <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
       </div>
 
-<!--       <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
-        <div 
-        @click="status = 'price'" 
-        class="w-[120px] xs:w-[180px] h-[120px] xs:h-[180px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer bt3">
-          <ul class="flex flex-col items-center">
-            <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
-            <li class="text-white xs:py-2 font-bold text-[32px] xs:text-[46px]"><span class="text-[24px]">$</span>700</li>
-            <li class="text-white text-[8px] xs:text-[10px] font-thin whitespace-pre">*50 copies only</li>
-          </ul>
-        </div>
-        <div 
-        @click="status = 'rebate'" 
-        class="max-w-[320px] xs:w-full h-[120px] xs:h-[180px] bt4" style="width: calc(100% - 100px);">
-          <div 
-          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4 ease-out duration-300 hover:-mt-4 cursor-pointer">
-            <img src="./image/MM-logo.png" class="absolute -top-11 xs:-top-12 w-[120px] xs:w-[180px]">
-
-            <div class="w-full px-6 flex flex-row">
-              <div class="w-full">
-                <ul class="flex flex-col items-start">
-                  <li class="text-white text-[12px] sm:text-[16px] whitespace-pre">FOMO STONE HOLDER</li>
-                  <li class="text-2xl py-2 xs:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
-                    <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
-                    $700
-                    <img src="./image/delling.svg" class="absolute top-0 h-full">
-                    </span>
-                    <span class="text-white font-bold text-[32px] xs:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
-                  </li>
-                  <li class="text-white text-[8px] xs:text-[10px] font-thin">*50 copies only</li>
-                </ul>
-              </div>
-              <div class="w-1/5 flex items-center">
-                <img src="./image/fomo.png" class="absolute top-2 -right-10 w-[60px]">
-                <img src="./image/pd-01.png" class="absolute bottom-0 -right-6 xs:-right-10 w-[90px] xs:w-[140px]">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="flex flex-row space-x-2 w-full pl-2 pr-8 md:px-2 justify-center">
         <div 
         @click="status = 'price'" 
@@ -447,7 +408,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
 
       <div 
       x-show="status === 'price'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g3" 
+      class="max-w-lg w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g3" 
       :class="{ 'mt-16': isopen }">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
@@ -463,7 +424,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-[1060px] xs:h-[860px
 
       <div 
       x-show="status === 'rebate'"
-      class="max-w-2xl w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g4">
+      class="max-w-lg w-full flex flex-col justify-center space-x-2 py-6 px-2 sm:px-12 g4">
         <p class="px-4 text-white text-[14px]">Your Email to enter the raffle:</p>
         <div class="flex flex-row space-x-2">
         <input 
