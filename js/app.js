@@ -56,7 +56,7 @@ btn.on('click', function(e) {
         delay: 3000,
       },
       navigation: {
-        nextEl: '.bp1',
+        nextEl: '.bn1',
         prevEl: '.bn2',
         clickable: true,
       },
