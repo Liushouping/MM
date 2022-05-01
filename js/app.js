@@ -53,7 +53,7 @@ btn.on('click', function(e) {
       loop: true,
       slidesPerView: 1,
       autoplay: {
-        delay: 1000,
+        delay: 3000,
       },
       navigation: {
         nextEl: '.bp1',
